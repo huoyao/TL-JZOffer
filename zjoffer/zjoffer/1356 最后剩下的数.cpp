@@ -4,7 +4,7 @@ int main()
   int n,m;
   while (scanf("%d", &n)!=EOF && n>0) {
     scanf("%d", &m);
-    int ans = 0;
+    int ans = 0;  //the remaining person id
     for (int i=1; i<=n; i++)
       ans = (ans+m) % i;
     printf("%d\n", ans+1);
